@@ -11,6 +11,7 @@ plt.plot(x, y)
 
 # Находим глобальный минимум на отрезке функции X от 1 до 30
 globalMinimum = optimize.differential_evolution(week2function, [(1, 30)])
+print(globalMinimum)
 print(globalMinimum.x)
 print(globalMinimum.fun)
 plt.plot(globalMinimum.x, globalMinimum.fun, "o")
